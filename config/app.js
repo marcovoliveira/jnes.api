@@ -16,8 +16,9 @@ module.exports = {
   */
 
   name: Env.get("APP_NAME", "AdonisJs"),
-  PORT: Env.get("PORT", "OPENSHIFT_NODEJS_PORT"),
-  HOST: Env.get("HOST", "OPENSHIFT_NODEJS_IP"),
+
+  PORT: Env.set("PORT", process.env.OPENSHIFT_NODEJS_PORT),
+  HOST: Env.set("HOST", process.env.OPENSHIFT_NODEJS_IP),
 
   /*
   |--------------------------------------------------------------------------
