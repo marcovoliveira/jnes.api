@@ -25,5 +25,5 @@ Route.get("/api", () => {
 });
 
 Route.get("/route", () => {
-  return { api: "New route testing" };
+  return { api: "New route testings" };
 });
