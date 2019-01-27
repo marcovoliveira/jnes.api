@@ -23,3 +23,7 @@ Route.get("/", () => {
 Route.get("/api", () => {
   return { api: "This is my api" };
 });
+
+Route.get("/route", () => {
+  return { api: "New route testing" };
+});
