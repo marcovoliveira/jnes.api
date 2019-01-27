@@ -17,6 +17,8 @@ module.exports = {
 
   name: Env.get("APP_NAME", "AdonisJs"),
 
+  host: Env.set("HOST", process.env.IP || "0.0.0.0"),
+  port: Env.set("PORT", process.env.PORT || 8080),
   /*
   |--------------------------------------------------------------------------
   | App Key
